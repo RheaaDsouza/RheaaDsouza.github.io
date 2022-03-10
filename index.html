@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/f67a6a1a38.js" crossorigin="anonymous"></script>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <!--Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+        <a class="navbar-brand" href="#page-top"><b>Rhea Dsouza</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#page-top">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End Navbar-->
+
+    <section id="page-top">
+        <div class="aboutme-section">
+            <div class="content">
+                <img class="rounded-circle" src="assets/pic.jpg" style="border:5px solid rgb(255, 255, 255);"
+                    height="250px" width="250px">
+                <h2>Rhea Dsouza</h2>
+                <h4 style="text-align: center; padding:10px;">XIE '22, BE Computer Eng</h4>
+                <p>Currently pursuing a degree in Computer Engineering.
+                    My Interests include Artificial Intelligence, machine learning,
+                    computer vision.</p>
+            </div>
+        </div>
+    </section>
+    <!--projects-->
+    <section id="projects">
+        <div class="container">
+            <div class="headings">
+                <h2>Projects</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/lstm.jpg" class="card-img-top" alt="lstm">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Classification</h5>
+                            <p class="card-text">Soccer Action video Classification classifies various soccer action
+                                videos such as
+                                goals or yellow card videos using CNN and bi-directional LSTM architecture.<br>
+                                <a href="https://github.com/RheaaDsouza/Video-Classification-using-Deep-Learning"><i
+                                        class="fa-brands fa-github"></i>GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/ocr.png" class="card-img-top" alt="ocr">
+                        <div class="card-body">
+                            <h5 class="card-title">Text Extraction from Images</h5>
+                            <p class="card-text">Using Tesseract OCR to extract texts from images.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/ml.png" class="card-img-top" alt="ml">
+                        <div class="card-body">
+                            <h5 class="card-title">Machine Learning</h5>
+                            <p class="card-text">Training a model to classify images in which brain tumour is detected
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="assets/weatherapp.png" class="card-img-top" id="weather-img" alt="app-ui">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">Weather App built in Flutter using Open Weather API.<br>
+                                <a href="https://github.com/RheaaDsouza/Weather-App-Flutter"><i
+                                        class="fa-brands fa-github"></i>GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--skills-->
+    <section id="skills">
+        <div class="container">
+            <div class="headings">
+                <h2>Skills</h2>
+            </div>
+            <div class="skills-content">
+                <h5>Programming Languages</h5>
+                <div class="row" id="skills-row1">
+                    <div class="box">
+                        <div class="col">
+                            <div class="skills-images">
+                                <img src="assets/python.jfif" height="50px" width="50px">
+                            </div>
+                            <h6>Python</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/c.png" height="50px" width="50px">
+                            </div>
+                            <h6>C</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col">
+                            <div class="skills-images">
+                                <img src="assets/cpp.png" height="50px" width="50px">
+                            </div>
+                            <h6>C++</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5>Front End</h5>
+                <div class="row" id="skills-row2">
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/html.png" height="50px" width="50px">
+                            </div>
+                            <h6>HTML</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/css.png" height="50px" width="50px">
+                            </div>
+                            <h6>CSS</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/javascript.png" height="50px" width="50px">
+                            </div>
+                            <h6>Javascript</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/bootstrap.jfif" height="50px" width="50px">
+                            </div>
+                            <h6>Bootstrap</h6>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/flutter.jpg" height="50px" width="50px">
+                            </div>
+                            <h6>Flutter</h6>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5>Back End</h5>
+                <div class="row" id="skills-row3">
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/mysql.png" height="50px" width="50px">
+                            </div>
+                            <h6>MySQL</h6>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="col-md-auto">
+                            <div class="skills-images">
+                                <img src="assets/firebase.png" height="50px" width="50px">
+                            </div>
+                            <h6>Firebase</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact me-->
+    <section id="contact" class="text-center">
+        <hr>
+        <div class="contact-section">
+
+            <div class="headings">
+                <h2>Get in touch</h2>
+            </div>
+            <div>
+                <div style="justify-content: center; padding:10px;"> 
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: <a href="mailto:dsouzarheaaa@gmail.com">dsouzarheaaa@gmail.com</a></span>
+                </div>
+                
+                <div style="justify-content: center; padding:10px;">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone: +91-9930405345</span>
+                </div>
+                <div style="padding:50px;">
+                    <button class="btn btn-light"><a href="mailto:dsouzarheaaa@gmail.com">Contact Now</a></button>
+                </div>
+                
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <!--Footer section-->
+    <footer>
+        <div id="footer-section">
+            <p class="copyright">&copy; Rhea Dsouza 2022</p>
+            <button class="top hidden" onclick="goToTop();">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+        <!-- end back-to-top -->
+    </footer>
+</body>
+
+</html>
